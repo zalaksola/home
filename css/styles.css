@@ -1,7 +1,7 @@
 /* HIJACKED TAGS AND BASIC STUFF */
 body {
-	background: url("../img/bg.png");
-
+	/*background: url("../img/bg.png");*/
+	background-color: 	#55acee;
 }
 
 div {
@@ -33,7 +33,7 @@ h1 {
 }
 
 h2 {
-	color: #326B75;
+	color: #55acee;
 	font-family: 'Carrois Gothic SC', sans-serif;
 	font-size: 30px;
 	border-bottom: 2px solid #819E45;
