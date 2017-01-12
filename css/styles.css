@@ -1,7 +1,7 @@
 /* HIJACKED TAGS AND BASIC STUFF */
 body {
 	/*background: url("../img/bg.png");*/
-	background-color: 	#55acee;
+	background-color: 	#eeeff4;
 }
 
 div {
@@ -61,7 +61,7 @@ p {
 }
 
 .topbox {
-	background: #f3f3f3;
+	background: #55acee;
 	padding-bottom: 40px;
 	margin-top: 20px;
 	height: 30px;
