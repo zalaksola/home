@@ -1,3 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact</title>
+<link rel="stylesheet" type="text/css" href="/salesforce/assets/bootstrap-3.3.5-dist/css/bootstrap.min.css"/>
+<script src="/salesforce/assets/jquery/jquery-1.11.3.min.js"></script>
+<script src="/salesforce/assets/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+<script src="/salesforce/assets/jquery-validate/jquery.validate.min.js"></script>
+<script>
+    $.validator.setDefaults({
+        highlight: function(element) {
+            $(element).closest('.form-group').addClass('has-error');
+        },
+        unhighlight: function(element) {
+            $(element).closest('.form-group').removeClass('has-error');
+        },
+        errorElement: 'span',
+        errorClass: 'help-block',
+        errorPlacement: function(error, element) {
+            if(element.parent('.input-group').length) {
+                error.insertAfter(element.parent());
+            } else {
+                error.insertAfter(element);
+            }
+        }
+    });
+ 
+    $( document ).ready(function() {
+        $("#contact_form").validate();
+    });
+</script>
+<style>
+    body {
+        width:800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+</style>
+</head>
+<body>
 <!--  ----------------------------------------------------------------------  -->
 <!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
 <!--  If necessary, please modify the charset parameter to specify the        -->
@@ -22,26 +62,28 @@
 <!--  <input type="hidden" name="debugEmail" value="zsolanki@sfu.ca">         -->
 <!--  ----------------------------------------------------------------------  -->
 
-<label for="name">Contact Name</label><input  id="name" maxlength="80" name="name" size="20" type="text" /><br>
+<label for="name">Contact Name</label><input  id="name" maxlength="80" name="name" size="20" type="text" /><br><br><br>
 
-<label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+<label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br><br><br>
 
-<label for="phone">Phone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
+<label for="phone">Phone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br><br><br>
 
-Desired Tour Date (primary):<span class="dateInput"><input  id="00N4m000000ODb2" name="00N4m000000ODb2" size="20" type="text" /></span><br>
+Desired Tour Date (primary):<span class="dateInput"><input  id="00N4m000000ODb2" name="00N4m000000ODb2" size="20" type="text" /></span><br><br><br>
 
-Desired Tour Date (secondary):<span class="dateInput"><input  id="00N4m000000ODb7" name="00N4m000000ODb7" size="20" type="text" /></span><br>
+Desired Tour Date (secondary):<span class="dateInput"><input  id="00N4m000000ODb7" name="00N4m000000ODb7" size="20" type="text" /></span><br><br><br>
 
 Tour Duration:<select  id="00N4m000000ODbC" name="00N4m000000ODbC" title="Tour Duration"><option value="">--None--</option><option value="1 Hour">1 Hour</option>
 <option value="1 Hour 30 Mins">1 Hour 30 Mins</option>
-</select><br>
+</select><br><br><br>
 
-Number of Guests:<input  id="00N4m000000ODbW" name="00N4m000000ODbW" size="20" type="text" /><br>
+Number of Guests:<input  id="00N4m000000ODbW" name="00N4m000000ODbW" size="20" type="text" /><br><br><br>
 
-Number of Chaperones:<input  id="00N4m000000ODbb" name="00N4m000000ODbb" size="20" type="text" /><br>
+Number of Chaperones:<input  id="00N4m000000ODbb" name="00N4m000000ODbb" size="20" type="text" /><br><br><br>
 
-<input type="hidden"  id="external" name="external" value="1" /><br>
+<input type="hidden"  id="external" name="external" value="1" /><br><br><br>
 
 <input type="submit" name="submit">
 
 </form>
+</body>
+</html>
