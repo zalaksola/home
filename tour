@@ -1,0 +1,47 @@
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
+<!--  If necessary, please modify the charset parameter to specify the        -->
+<!--  character set of your HTML page.                                        -->
+<!--  ----------------------------------------------------------------------  -->
+
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <FORM> element to your page.             -->
+<!--  ----------------------------------------------------------------------  -->
+
+<form action="https://cs148.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+
+<input type=hidden name="orgid" value="00D4m0000008bnj">
+<input type=hidden name="retURL" value="https://community.sfu.ca/futurestudents/s/">
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+<!--  these lines if you wish to test in debug mode.                          -->
+<!--  <input type="hidden" name="debug" value=1>                              -->
+<!--  <input type="hidden" name="debugEmail" value="zsolanki@sfu.ca">         -->
+<!--  ----------------------------------------------------------------------  -->
+
+<label for="name">Contact Name</label><input  id="name" maxlength="80" name="name" size="20" type="text" /><br>
+
+<label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+
+<label for="phone">Phone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
+
+Desired Tour Date (primary):<span class="dateInput"><input  id="00N4m000000ODb2" name="00N4m000000ODb2" size="20" type="text" /></span><br>
+
+Desired Tour Date (secondary):<span class="dateInput"><input  id="00N4m000000ODb7" name="00N4m000000ODb7" size="20" type="text" /></span><br>
+
+Tour Duration:<select  id="00N4m000000ODbC" name="00N4m000000ODbC" title="Tour Duration"><option value="">--None--</option><option value="1 Hour">1 Hour</option>
+<option value="1 Hour 30 Mins">1 Hour 30 Mins</option>
+</select><br>
+
+Number of Guests:<input  id="00N4m000000ODbW" name="00N4m000000ODbW" size="20" type="text" /><br>
+
+Number of Chaperones:<input  id="00N4m000000ODbb" name="00N4m000000ODbb" size="20" type="text" /><br>
+
+<input type="hidden"  id="external" name="external" value="1" /><br>
+
+<input type="submit" name="submit">
+
+</form>
