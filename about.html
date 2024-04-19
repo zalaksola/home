@@ -83,17 +83,17 @@
 		embedded_svc.settings.entryFeature = 'LiveAgent';
 
 		embedded_svc.init(
-			'https://simonfraser.my.salesforce.com',
-			'https://community.sfu.ca/',
+			'https://simonfraser--stage.sandbox.my.salesforce.com',
+			'https://simonfraser--stage.sandbox.my.site.com/futurestudents',
 			gslbBaseURL,
-			'00D1I000000n2Bb',
-			'RIS_LiveChat_Agent',
+			'00DAu0000031ThN',
+			'RIS_Chat_Agents',
 			{
-				baseLiveAgentContentURL: 'https://c.la1-core1.sfdc-58ktaz.salesforceliveagent.com/content',
+				baseLiveAgentContentURL: 'https://c.la2s-core1.sfdc-58ktaz.salesforceliveagent.com/content',
 				deploymentId: '572Mm0000000hTB',
-				buttonId: '573Mm000004C7t4',
-				baseLiveAgentURL: 'https://d.la1-core1.sfdc-58ktaz.salesforceliveagent.com/chat',
-				eswLiveAgentDevName: 'RIS_LiveChat_Agent',
+				buttonId: '573Au000000Svo9',
+				baseLiveAgentURL: 'https://d.la2s-core1.sfdc-58ktaz.salesforceliveagent.com/chat',
+				eswLiveAgentDevName: 'RIS_Chat_Agents',
 				isOfflineSupportEnabled: false
 			}
 		);
@@ -101,7 +101,7 @@
 
 	if (!window.embedded_svc) {
 		var s = document.createElement('script');
-		s.setAttribute('src', 'https://simonfraser.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+		s.setAttribute('src', 'https://simonfraser--stage.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
 		s.onload = function() {
 			initESW(null);
 		};
